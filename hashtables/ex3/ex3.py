@@ -2,9 +2,23 @@ def intersection(arrays):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    counts = {}
 
-    return result
+    for a in arrays:
+        for num in a:
+            if num not in counts:
+                counts[num] = 0
+            counts[num] += 1
+
+    result = []
+
+    for i, x in counts.items():
+        if x == len(arrays):
+            result.append(i)
+
+    return 
+    
+#* ALL TESTS PASSED
 
 
 if __name__ == "__main__":
