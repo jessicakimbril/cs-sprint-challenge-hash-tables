@@ -16,7 +16,7 @@ def intersection(arrays):
         if x == len(arrays):
             result.append(i)
 
-    return 
+    return result
     
 #* ALL TESTS PASSED
 
